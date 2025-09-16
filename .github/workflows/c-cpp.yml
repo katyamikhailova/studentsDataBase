@@ -27,7 +27,7 @@ jobs:
         make student_tests || echo "GoogleTest not available, skipping tests"
         make test || echo "Tests failed or not available"
 
-    - name: Verify application works
+    - name: Verify build
       run: |
-        echo "Build completed successfully!"
-        ./student_database --help || echo "Application executed"
+        echo "Build completed successfully"
+        ls -la student_database
